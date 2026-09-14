@@ -4,7 +4,7 @@
 
 - **Fichier racine du workspace :** Nkentseu.jenga
 - **Projet de demarrage :** Sandbox
-- **Nombre de chaines de compilation :** 5
+- **Nombre de chaines de compilation :** 8
 - **Nombre de projets par types :**
    - *ConsoleApp* : 98
       - *sortie:* **PS PS C:\Users\LENOVO\Desktop\Cours de l'ecole\Rihen univers\Nkentseu> Get-Content jenga_output.txt | Select-String "ConsoleApp" | Measure-Object | Select-Object -ExpandProperty Count
