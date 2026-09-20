@@ -1,1 +1,79 @@
 
+PS C:\Users\LENOVO\Desktop\Cours de l'ecole\Rihen univers\Nkentseu> git init
+Reinitialized existing Git repository in C:/Users/LENOVO/Desktop/Cours de l'ecole/Rihen univers/Nkentseu/.git/
+PS C:\Users\LENOVO\Desktop\Cours de l'ecole\Rihen univers\Nkentseu> echo "Premier fichier" > fichier1.txt
+PS C:\Users\LENOVO\Desktop\Cours de l'ecole\Rihen univers\Nkentseu> git add fichier1.txt
+PS C:\Users\LENOVO\Desktop\Cours de l'ecole\Rihen univers\Nkentseu> git commit -m "Ajout du fichier 1"
+[main 18d11fa0] Ajout du fichier 1
+ 8 files changed, 50 insertions(+), 6 deletions(-)
+ create mode 100644 Applications/MonEssai/MonEssai.jenga
+ create mode 100644 Applications/MonEssai/main.cpp
+ create mode 100644 fichier1.txt
+ create mode 100644 sortie.txt
+PS C:\Users\LENOVO\Desktop\Cours de l'ecole\Rihen univers\Nkentseu> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\LENOVO\Desktop\Cours de l'ecole\Rihen univers\Nkentseu> echo "Deuxième fichier" > fichier2.txt
+PS C:\Users\LENOVO\Desktop\Cours de l'ecole\Rihen univers\Nkentseu> git add fichier2.txt
+PS C:\Users\LENOVO\Desktop\Cours de l'ecole\Rihen univers\Nkentseu> git commit -m "Ajout du fichier 2"
+[main 6d58969d] Ajout du fichier 2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fichier2.txt
+PS C:\Users\LENOVO\Desktop\Cours de l'ecole\Rihen univers\Nkentseu> echo "Troisième fichier" > fichier3.txt
+PS C:\Users\LENOVO\Desktop\Cours de l'ecole\Rihen univers\Nkentseu> git add fichier3.txt
+PS C:\Users\LENOVO\Desktop\Cours de l'ecole\Rihen univers\Nkentseu> git commit -m "Ajout du fichier 3"
+[main 6578991b] Ajout du fichier 3
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fichier3.txt
+PS C:\Users\LENOVO\Desktop\Cours de l'ecole\Rihen univers\Nkentseu> git log --oneline
+6578991b (HEAD -> main) Ajout du fichier 3
+6d58969d Ajout du fichier 2
+18d11fa0 Ajout du fichier 1
+6fb634fc (origin/main, origin/HEAD) NKCode : le web sort du polissage et devient la phase 14, avec une echeance reelle
+860e9d7f Refonte NK3DModeler : a jour avec main, et NKCode signe sur certificat (#85)
+c1c815ff CI : les huit epinglages de Jenga passent par JENGA_VERSION (#87)
+addf709d NKCode beta.8 a beta.11 : la ligne publiee rejoint enfin main (#86)
+43285010 (origin/fix/nktraits-portable) NkTraits : demander a la primitive si elle existe, pas au compilateur qui il est
+0d50a971 NKCode 0.1.0-beta.6 : version bumpee avant publication
+set mark: ...skipping...
+6578991b (HEAD -> main) Ajout du fichier 3
+6d58969d Ajout du fichier 2
+18d11fa0 Ajout du fichier 1
+6fb634fc (origin/main, origin/HEAD) NKCode : le web sort du polissage et devient la phase 14, avec une echeance reelle
+860e9d7f Refonte NK3DModeler : a jour avec main, et NKCode signe sur certificat (#85)
+c1c815ff CI : les huit epinglages de Jenga passent par JENGA_VERSION (#87)
+addf709d NKCode beta.8 a beta.11 : la ligne publiee rejoint enfin main (#86)
+43285010 (origin/fix/nktraits-portable) NkTraits : demander a la primitive si elle existe, pas au compilateur qui il est
+0d50a971 NKCode 0.1.0-beta.6 : version bumpee avant publication
+7c3e84a0 Merge remote-tracking branch 'origin/main'
+4c7d66b5 Distribution : refuser de livrer un exe dont une DLL importee manque
+ad0779cb NKCode : runtime MinGW en statique — l'exe ne depend plus du msys64 du testeur
+cc41ca45 GemCrush : le jeu complet -- menu, aventure 30 niveaux, 3 modes, audio synthetise (#84)
+5fc605de Vulkan : la garde headless existait UNIQUEMENT sous Windows -- segfault sur les trois dorsales Linux
+56b0ed67 wiki : les mesures Vulkan sont CONFIRMEES par contre-verification -- et un 5e piege, celui qui a permis le desaccord
+ecfb57cb wiki maintenabilite : quelle garde rougirait AUJOURD HUI -- reponse mesuree, et c est << aucune ici >>
+6578991b (HEAD -> main) Ajout du fichier 3
+6d58969d Ajout du fichier 2
+18d11fa0 Ajout du fichier 1
+6fb634fc (origin/main, origin/HEAD) NKCode : le web sort du polissage et devient la phase 14, avec une echeance reelle
+860e9d7f Refonte NK3DModeler : a jour avec main, et NKCode signe sur certificat (#85)
+c1c815ff CI : les huit epinglages de Jenga passent par JENGA_VERSION (#87)
+addf709d NKCode beta.8 a beta.11 : la ligne publiee rejoint enfin main (#86)
+43285010 (origin/fix/nktraits-portable) NkTraits : demander a la primitive si elle existe, pas au compilateur qui il est
+0d50a971 NKCode 0.1.0-beta.6 : version bumpee avant publication
+7c3e84a0 Merge remote-tracking branch 'origin/main'
+4c7d66b5 Distribution : refuser de livrer un exe dont une DLL importee manque
+ad0779cb NKCode : runtime MinGW en statique — l'exe ne depend plus du msys64 du testeur
+cc41ca45 GemCrush : le jeu complet -- menu, aventure 30 niveaux, 3 modes, audio synthetise (#84)
+5fc605de Vulkan : la garde headless existait UNIQUEMENT sous Windows -- segfault sur les trois dorsales Linux
+56b0ed67 wiki : les mesures Vulkan sont CONFIRMEES par contre-verification -- et un 5e piege, celui qui a permis le desaccord
+ecfb57cb wiki maintenabilite : quelle garde rougirait AUJOURD HUI -- reponse mesuree, et c est << aucune ici >>
+PS C:\Users\LENOVO\Desktop\Cours de l'ecole\Rihen univers\Nkentseu> git log --oneline --graph -n 5
+* 6578991b (HEAD -> main) Ajout du fichier 3
+* 6d58969d Ajout du fichier 2
+* 18d11fa0 Ajout du fichier 1
+* 6fb634fc (origin/main, origin/HEAD) NKCode : le web sort du polissage et devient la phase 14, avec une echeance reelle
+* 860e9d7f Refonte NK3DModeler : a jour avec main, et NKCode signe sur certificat (#85)
